@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>KNTL - The Game | GWS Buat yang menang :)</title>
+  </head>
+  <body>
+    <!-- Content -->
+    <center>
+      <div id="main">
+        <br />
+        <div class="navbar">
+          <div id="play" class="play-the-game">
+            <button class="btn-main" onclick="main()"><i class="bi bi-play-fill"></i> PLAY</button>
+          </div>
+          <div id="back" class="play-the-game hidden">
+            <button class="btn-kembali" onclick="back()"><i class="bi bi-arrow-left-short"></i> KEMBALI</button>
+          </div>
+          <div id="info" class="navigate-left">
+            <button class="btn-info" onclick="info()"><i class="bi bi-info-circle"></i> INFO</button>
+          </div>
+        </div>
+        <!-- Navbar Mobile -->
+        <div class="navbar-ml">
+          <div id="play-ml" class="play-the-game-in-mobile">
+            <button class="btn-main-ml" onclick="main_ml()"><i class="bi bi-play-fill"></i> PLAY</button>
+          </div>
+          <div id="back-ml" class="play-the-game-in-moblie hidden">
+            <button class="btn-kembali-ml" onclick="back_ml()">KEMBALI KE MENU UTAMA</button>
+          </div>
+        </div>
+        <!-- Info -->
+        <div id="info-ml">
+          <button class="btn-info-ml" onclick="info()"><i class="bi bi-info-circle"></i></button>
+        </div>
+        <div id="title" class="games-title">
+          <h2 class="title-game2"></h2>
+          <h5 class="tagline2"></h5>
+        </div>
+        <!-- Play Games Category -->
+        <div id="games-cate" class="gc hidden">
+          <div id="main-title-games-cate" class="main-title">
+            <h1 class="title-cate">Pilih Permainan</h1>
+          </div>
+          <div id="title-game-pilihan-ganda" class="hidden">
+            <h1 class="title-cate">Tebak - Tebakan</h1>
+          </div>
+          <div id="title-game-pukul-tikus-tanah" class="hidden">
+            <h1 class="title-cate">Pukul Tikus Tanah</h1>
+          </div>
+          <div id="title-game-snake-xenzia" class="hidden">
+            <h1 class="title-cate">Ular Kelaparan</h1>
+          </div>
+          <br />
+          <div class="pilihan-game">
+            <button class="btn-mge" onclick="mge_play()">Tebak - Tebakan</button>
+            <button class="btn-ptt" onclick="ptt_play()">Pukul Tikus Tanah</button>
+            <button class="btn-ukk" onclick="ukk_play()">Ular Kelaparan</button>
+          </div>
+          <div id="no-game-selected">
+            <h5 class="this-text"></h5>
+          </div>
+          <div id="pilihan-ganda" class="hidden">
+            <img src="https://cdn.cgv.id/uploads/movie/compressed/21021900.jpg" alt="Anggap Poster Game TITID" width="180" />
+            <div class="info-lebih-lanjut">
+              <div class="dsc">
+                <h3 class="deskripsi-ganda"></h3>
+              </div>
+              <button class="btn-play-this-game">Mainkan Tebak - Tebakan!</button>
+            </div>
+          </div>
+          <div id="pukul-tikus-tanah" class="hidden">
+            <img src="https://cdn.cgv.id/uploads/movie/pictures/19020600.jpg" alt="Anggap Poster Tikus Tanah" width="180" />
+            <div class="info-lebih-lanjut">
+              <div class="dsc">
+                <h3 class="deskripsi-tikus"></h3>
+              </div>
+              <button class="btn-play-this-game">Mainkan Pukul Tikus Tanah!</button>
+            </div>
+          </div>
+          <div id="snake-xenzia" class="hidden">
+            <img src="https://sidoyannonton.files.wordpress.com/2017/07/spider_man_homecoming_improved_version_by_themadbutcher-dbafc4m.jpg" alt="Anggap Poster Snake Xenzia" width="180" />
+            <div class="info-lebih-lanjut">
+              <div class="dsc">
+                <h3 class="deskripsi-ular"></h3>
+              </div>
+              <button class="btn-play-this-game">Mainkan Ular Kelaparan!</button>
+            </div>
+          </div>
+        </div>
+        <div id="games-cate-ml" class="gc hidden">
+          <div id="tebak-tebakan">
+            <div class="about-game-ml">
+              <img src="https://cdn.cgv.id/uploads/movie/compressed/21021900.jpg" alt="Anggap Poster Game TITID" width="180" />
+              <div class="btn">
+                <button class="btn-play-this-game" onclick="play_ganda()"><i class="bi bi-play-fill"></i> PLAY</button>
+              </div>
+              <h2 class="title-cate mt me">Tebak - Tebakan</h2>
+              <div class="btn-next-prev">
+                <button class="btn-previous" onclick="prev_snake()"><i class="bi bi-caret-left-fill"></i></button>
+                <button class="btn-next" onclick="next_tikus()"><i class="bi bi-caret-right-fill"></i></button>
+              </div>
+              <div class="info-lebih-lanjut-ml-v">
+                <div class="dsc-mv">
+                  <h3 class="deskripsi-ganda"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tikus-tanah" class="hidden">
+            <div class="about-game-ml">
+              <img src="https://cdn.cgv.id/uploads/movie/pictures/19020600.jpg" alt="Anggap Poster Tikus Tanah" width="180" />
+              <div class="btn">
+                <button class="btn-play-this-game" onclick="play_ganda()"><i class="bi bi-play-fill"></i> PLAY</button>
+              </div>
+              <h2 class="title-cate mt me">Pukul Tikus Tanah</h2>
+              <div class="btn-next-prev">
+                <button class="btn-previous" onclick="prev_tebak()"><i class="bi bi-caret-left-fill"></i></button>
+                <button class="btn-next" onclick="next_snake()"><i class="bi bi-caret-right-fill"></i></button>
+              </div>
+              <div class="info-lebih-lanjut-ml-v">
+                <div class="dsc-mv">
+                  <h3 class="deskripsi-tikus"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ular-kesepian" class="hidden">
+            <div class="about-game-ml">
+              <img src="https://sidoyannonton.files.wordpress.com/2017/07/spider_man_homecoming_improved_version_by_themadbutcher-dbafc4m.jpg" alt="Anggap Poster Snake Xenzia" width="180" />
+              <div class="btn">
+                <button class="btn-play-this-game" onclick="play_ganda()"><i class="bi bi-play-fill"></i> PLAY</button>
+              </div>
+              <h2 class="title-cate mt me">Ular Kelaparan</h2>
+              <div class="btn-next-prev">
+                <button class="btn-previous" onclick="prev_tikus()"><i class="bi bi-caret-left-fill"></i></button>
+                <button class="btn-next" onclick="next_tebak()"><i class="bi bi-caret-right-fill"></i></button>
+              </div>
+              <div class="info-lebih-lanjut-ml-v">
+                <div class="dsc-mv">
+                  <h3 class="deskripsi-ular"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <h5 class="c">Created By - Acfarii ( A.K.A. Fahry ) 2021</h5>
+        </footer>
+      </div>
+    </center>
+
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
