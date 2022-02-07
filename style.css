@@ -284,10 +284,9 @@ body {
 }
 
 .dsc-mv {
-  width: 25pc;
+  width: 18pc;
   text-align: left;
   float: right;
-  margin-right: -2.7pc;
   margin-top: 10px;
 }
 
@@ -772,6 +771,321 @@ footer {
     font-weight: normal;
   }
 
+  /* info.html */
+
+  /* Title Segmen Info */
+
+  .title-info-segmen-tentang::after {
+    content: "tentang";
+    font-variant: small-caps;
+    font-family: "Nunito", sans-serif;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+  }
+
+  /* Line Border */
+
+  .vertical-line-border {
+    border-left: 1.5px solid black;
+    margin-top: 20px;
+    margin-bottom: -45pc;
+    height: 45pc;
+    width: 1px;
+  }
+
+  .circle {
+    background: black;
+    margin-right: 3px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+  }
+
+  /* About Developer */
+
+  .about-dev {
+    position: relative;
+    margin-left: -38pc;
+  }
+
+  .border-left-bottom {
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    margin-top: 4pc;
+    margin-left: 7pc;
+    margin-bottom: -10pc;
+    position: relative;
+    height: 8pc;
+    width: 25pc;
+  }
+
+  .des {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dsc-info {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .title-about {
+    margin-top: 3pc;
+    margin-left: 4pc;
+    font-size: 35px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-shadow: 2px 2px 0 rgba(65, 65, 65, 0.575);
+  }
+
+  /* About this Game */
+
+  .about-game {
+    text-align: right;
+    width: 28pc;
+    margin-left: 30pc;
+  }
+
+  .border-right-bottom {
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    margin-top: 8pc;
+    margin-left: 5pc;
+    margin-bottom: -11pc;
+    position: relative;
+    height: 8pc;
+    width: 25pc;
+  }
+
+  /* Tutorial */
+
+  .tutorial {
+    margin-top: 2pc;
+  }
+
+  .bg-title {
+    background: whitesmoke;
+    margin-top: 10pc;
+  }
+
+  .title-info-segmen-tutorial::after {
+    content: "cara bermain";
+    font-family: "Nunito", sans-serif;
+    font-variant: small-caps;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+  }
+
+  .border-circle {
+    background: darkred;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+  }
+
+  .tt {
+    margin-top: -29px;
+    margin-left: 8%;
+  }
+
+  .s {
+    text-align: center;
+  }
+
+  .bar {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 70%;
+  }
+
+  .ds {
+    font-family: "Nunito", sans-serif;
+    color: black;
+    font-size: 18px;
+  }
+
+  .link-v {
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+  }
+
+  .link-v:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .tutor {
+    margin-top: 20px;
+  }
+
+  /* Step 1 */
+
+  .s1 {
+    width: 30pc;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 40%;
+  }
+
+  .step-1::after {
+    content: "1";
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 30px;
+  }
+
+  .title-step1::after {
+    content: "Akses Masuk ke Game KNTL";
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  /* Step 2 */
+
+  .s2 {
+    width: 30pc;
+    text-align: left;
+    margin-top: -133px;
+    margin-left: 40%;
+  }
+
+  .step-2::after {
+    content: "2";
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 30px;
+  }
+
+  .title-step2::after {
+    content: "Mulai Bermain";
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  /* Line Connect */
+
+  .line-go-under {
+    border-right: 1.5px solid black;
+    margin-left: 10pc;
+    margin-top: 15px;
+    height: 11pc;
+    width: 1px;
+  }
+
+  .q .circle {
+    margin-left: 33.3%;
+  }
+
+  .line-go-right {
+    border-bottom: 1.5px solid black;
+    margin-top: -30px;
+    margin-left: -8.9pc;
+    height: 1px;
+    width: 19pc;
+  }
+
+  .a .circle {
+    margin-left: -30%;
+    margin-top: -3px;
+  }
+
+  .out .circle {
+    margin-left: 10pc;
+    margin-top: 5%;
+    margin-bottom: -20px;
+  }
+
+  /* Contoh Gambar Website */
+
+  .gambar {
+    margin-left: -60%;
+    margin-top: -6pc;
+  }
+
+  .gambar .k {
+    font-family: "Gochi Hand", sans-serif;
+    font-size: 20px;
+    word-spacing: 2px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Mobile Web */
+
+  .ml-ver {
+    margin-top: 50px;
+    margin-left: -10pc;
+  }
+
+  .web1 {
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .ml-ver .k {
+    margin-right: 72%;
+  }
+
+  /* PC, Laptop, or iPad Web */
+
+  .pc-i-ver {
+    margin-top: -28pc;
+    margin-left: 15pc;
+  }
+
+  .web2 {
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .pc-i-ver .k {
+    margin-right: 11%;
+  }
+
+  /* Step 3 */
+
+  .s3 {
+    width: 30pc;
+    text-align: left;
+    margin-top: 200px;
+    margin-right: 40%;
+  }
+
+  .step-3::after {
+    content: "3";
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 30px;
+  }
+
+  .title-step3::after {
+    content: "Pilih Permainan";
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  /* Step 4 */
+
+  .s4 {
+    width: 30pc;
+    text-align: left;
+    margin-top: -180px;
+    margin-left: 40%;
+  }
+
+  .step-4::after {
+    content: "4";
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 30px;
+  }
+
+  .title-step4::after {
+    content: "Selamat Bermain, dan Dapatkan Skor Tertinggi!";
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
   /* footer */
 
   footer {
@@ -782,10 +1096,19 @@ footer {
     z-index: 1;
   }
 
+  .f {
+    margin-top: 15pc;
+    margin-bottom: 2pc;
+  }
+
   .c {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     color: rgb(170, 170, 170);
     font-family: "Inconsolata", sans-serif;
     text-align: left;
+  }
+
+  .z {
+    color: black;
   }
 }

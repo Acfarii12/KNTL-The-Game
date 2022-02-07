@@ -118,3 +118,11 @@ function prev_tebak() {
   document.getElementById("tikus-tanah").style.display = "none";
   document.getElementById("tebak-tebakan").style.display = "block";
 }
+
+// =====================
+// ===== info.html =====
+// =====================
+
+function back_lbb() {
+  document.location.href = "lobby.html";
+}
