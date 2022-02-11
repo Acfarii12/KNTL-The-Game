@@ -1066,6 +1066,142 @@ footer {
     font-size: 23px;
   }
 
+  /* style.css */
+
+  .hidden {
+    display: none;
+  }
+
+  #tebak-bg {
+    background: url(bgTebak2anPCiVer.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+
+  /* Audio Setting */
+
+  #audio-setting {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+  }
+
+  .audio-setting {
+    background: whitesmoke;
+    height: 8pc;
+    margin: auto;
+    margin-top: 15.5pc;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+    width: 30pc;
+    text-align: center;
+  }
+
+  .title-audio-set::after {
+    content: "Audio Setting";
+    font-size: 29px;
+    font-family: "Inconsolata", sans-serif;
+    margin-top: 10px;
+  }
+
+  .bar-audi {
+    width: 20%;
+    margin-top: 7px;
+  }
+
+  .button-back-control {
+    margin-top: -36px;
+    text-align: right;
+  }
+
+  .btn-back-set {
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #626262;
+  }
+
+  .btn-back-set:hover {
+    color: black;
+  }
+
+  .button-audio-control {
+    margin-top: 30px;
+  }
+
+  .btn-music {
+    background: #8b0000;
+    border: none;
+    height: 40px;
+    width: 20pc;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #c5c5c5;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+  }
+
+  .btn-music:hover {
+    background: #5b0000;
+    box-shadow: none;
+    color: white;
+  }
+
+  /* Content */
+
+  #button-open-the-setting {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .btn-open-setting {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    word-spacing: 2px;
+    height: 40px;
+    width: 10pc;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn-open-setting:hover {
+    background: rgba(179, 179, 179, 0.5);
+  }
+
+  /* Games Area */
+
+  #games-area {
+    text-align: center;
+    margin-top: 5pc;
+  }
+
+  .quest-w {
+    margin: auto;
+    width: 40pc;
+  }
+
+  .quest {
+    font-family: "Didact Gothic", sans-serif;
+  }
+
+  .radio-answers {
+    margin-top: 3pc;
+    text-align: left;
+    background: tomato;
+  }
+
+  .inplab {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 3pc;
+  }
+
   /* footer */
 
   footer {

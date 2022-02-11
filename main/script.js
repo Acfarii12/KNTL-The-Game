@@ -1,13 +1,13 @@
 function play_ganda() {
-  document.location.href = "games/tebak.html";
+  document.location.href = "tebak.html";
 }
 
 function play_tikus() {
-  document.location.href = "games/tikus.html";
+  document.location.href = "tikus.html";
 }
 
 function play_ular() {
-  document.location.href = "games/ular.html";
+  document.location.href = "ular.html";
 }
 
 // ==============================
@@ -136,5 +136,164 @@ function prev_tebak() {
 // =====================
 
 function back() {
+  document.location.href = "lobby.html";
+}
+
+// ===================
+// ====== Games ======
+// ===================
+
+// Tebak - Tebakan
+
+// =====================
+// ======= Games =======
+// =====================
+
+// Audio Setting
+
+var audioPlaying = false;
+function music() {
+  var audio = document.getElementById("bgMusic");
+  if (!audioPlaying) audio.play();
+  else audio.pause();
+  audioPlaying = !audioPlaying;
+}
+
+function back_audi() {
+  document.getElementById("audio-setting").style.display = "none";
+  document.getElementById("button-open-the-setting").style.display = "block";
+  document.getElementById("games-area").style.display = "block";
+}
+
+function open_setting() {
+  document.getElementById("audio-setting").style.display = "block";
+  document.getElementById("button-open-the-setting").style.display = "none";
+  document.getElementById("games-area").style.display = "none";
+}
+
+// ====================
+// ======= DATA =======
+// ====================
+
+const QUIZ = [
+  {
+    question: "Kasur, kasur apa yang mengerikan?",
+    answer: ["Kasur Mantan", "Kasurupan", "Kasur Bau Ketek Gorila", "Kasur Ilmu Hitam"],
+  },
+  {
+    question: "Jika kamu kalah argumen jawab apa?",
+    answer: ["Au Ah Gelap", "Ah shit, here we go again!", "Iri Bilang Bos!", "Yahaha Hayyuk Bapak kau Salto"],
+  },
+  {
+    question: "Jika kamu mengendarai sepeda motor, helmnya dipakai di?",
+    answer: ["Siku", "Kepala", "Lutut", "Paru-paru"],
+  },
+  {
+    question: "0 + 1 x 0 = ?",
+    answer: ["2", "I", "1", "0"],
+  },
+  {
+    question: "Bebek apa yang kakinya dua?",
+    answer: ["Bebek peliharaanku", "Bebek dia", "Bebeknya Pak Asep", "Memang takdirnya berkaki dua"],
+  },
+  {
+    question: "Jumlah tangan ayam sebanyak?",
+    answer: ["20cm", "2", "Tidak memiliki tangan", "40, kata mama"],
+  },
+  {
+    question: "Orang yang tinggal disebelah rumah, disebut?",
+    answer: ["Pak Rahmat", "Ronaldo Setiwan", "YouTuber", "Pak RT"],
+  },
+  {
+    question: "Eminem kalau haus jadi apa?",
+    answer: ["Eminta uang buat beli minum", "Eminum", "Emikir dulu", "Eminem puasa"],
+  },
+  {
+    question: "Mengapa pemanasan global dapat menyebabkan kepunahan spesies? Jelaskan!",
+    answer: ["Peningkatan suhu menyebabkan kepunahan lebih dari satu juta spesies", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
+  },
+  {
+    question: "Minuman paling disukai oleh orang-orang diseluruh dunia?",
+    answer: ["Teh", "Pop Es", "Belgium chocolate flavored lemon tea", "Kopi Kapal Api"],
+  },
+  {
+    question: "Ikan, ikan apa yang suka berhenti?",
+    answer: ["Ikan Paus", "Ikan Tongkol", "Ikan Teri", "Ikan Pause"],
+  },
+  {
+    question: "Lama permainan bola tenis?",
+    answer: ["Ditentukan oleh poin", "2 × 45 menit", "20 menit", " 4 × 10 menit"],
+  },
+];
+
+const CORRECT_ANSWER = [1, 2, 0, 3, 3, 3, 1, 1, 1, 0, 3, 0];
+
+// =========================
+// ==== SETUP QUESTIONS ====
+// =========================
+
+let current_q = 0;
+let total_score = 0;
+let saved_answer = [];
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  setupQuestion();
+});
+
+function setupQuestion() {
+  document.getElementById("question").innerText = QUIZ[current_q]["question"];
+  document.getElementById("choiceText0").innerText = QUIZ[current_q]["answer"][0];
+  document.getElementById("choiceText1").innerText = QUIZ[current_q]["answer"][1];
+  document.getElementById("choiceText2").innerText = QUIZ[current_q]["answer"][2];
+  document.getElementById("choiceText3").innerText = QUIZ[current_q]["answer"][3];
+}
+
+function nextQuestion() {
+  current_q++;
+
+  saveAnswer();
+
+  if (current_q > QUIZ.length - 1) stopQuiz();
+
+  resetState();
+  setupQuestion();
+}
+
+function resetState() {
+  const choosedAnswer = document.querySelector("input[type='radio']:checked");
+  if (choosedAnswer != null) choosedAnswer.checked = false;
+}
+
+function stopQuiz() {
+  checkScore();
+
+  document.getElementById("games-area").style.display = "none";
+  document.getElementById("game-end").style.display = "block";
+
+  document.getElementById("scoreText").innerHTML = "Score kamu " + total_score;
+
+  startConfetti();
+  return;
+}
+
+function saveAnswer() {
+  const answer = document.querySelector("input[type='radio']:checked");
+  if (answer != null) {
+    saved_answer.push(parseInt(answer.getAttribute("data-id")));
+  } else {
+    saved_answer.push(0);
+  }
+}
+
+function checkScore() {
+  for (i = 0; i < saved_answer.length; i++) {
+    if (saved_answer[i] == CORRECT_ANSWER[i]) total_score += 100;
+  }
+}
+
+function endgame() {
+  alert("Terima kasih telah memainkan game Tebak-tebakan!");
+  alert("Mainkan game yang lainnya!");
+  alert("Dan tunggu game-game baru selanjutnya!");
   document.location.href = "lobby.html";
 }
