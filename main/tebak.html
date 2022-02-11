@@ -26,52 +26,145 @@
   <body id="tebak-bg">
     <!-- Audio Mii Plaza -->
     <audio id="bgMusic" src="music/Mii Plaza.mp3" loop></audio>
-    <!-- Audio Setting -->
-    <div id="audio-setting" class="hidden">
+    <!-- Setting -->
+    <div id="setting" class="">
       <br />
-      <div class="audio-setting">
+      <div class="setting">
+        <br />
         <h1 class="title-audio-set"></h1>
         <center>
-          <hr class="bar-audi" />
+          <hr class="bar-set" />
         </center>
         <div class="button-back-control">
           <button class="btn-back-set" onclick="back_audi()"><i class="bi bi-x"></i></button>
         </div>
         <div class="button-audio-control"><button id="btn_music" onclick="music()" class="btn-music">Play / Pause</button></div>
+        <div class="theme">
+          <h1 class="title-theme-set"></h1>
+          <center>
+            <hr class="bar-set" />
+          </center>
+          <div class="button-theme-control"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="setting2" class="hidden">
+      <br />
+      <div class="setting">
+        <br />
+        <h1 class="title-audio-set"></h1>
+        <center>
+          <hr class="bar-set" />
+        </center>
+        <div class="button-back-control">
+          <button class="btn-back-set" onclick="back_setting()"><i class="bi bi-x"></i></button>
+        </div>
+        <div class="button-audio-control"><button id="btn_music" onclick="music()" class="btn-music">Play / Pause</button></div>
+      </div>
+      <div class="theme">
+        <h1 class="title-theme-set"></h1>
+        <center>
+          <hr class="bar-set" />
+        </center>
+        <div class="button-theme-control"></div>
       </div>
     </div>
 
     <!-- Content -->
-    <div id="button-open-the-setting" class="">
-      <button class="btn-open-setting" onclick="open_setting()"><i class="bi bi-gear-fill"></i> Setting</button>
+
+    <div id="button-open-the-pause-menu" class="hidden">
+      <button class="btn-open-pause-menu" onclick="pause()">PAUSE</button>
+    </div>
+
+    <!-- Pause Menu -->
+
+    <div id="pause-menu" class="hidden">
+      <br />
+      <div class="pause-menu">
+        <br />
+        <h2 class="title-pause"></h2>
+        <center>
+          <hr class="bar-pause" />
+        </center>
+        <div class="menu">
+          <button class="btn-select" onclick="resume_tebak()">
+            <div class="o">
+              <span class="icons-pause"><i class="bi bi-play-fill"></i></span> <span class="info-menu">Lanjut Main</span>
+            </div>
+          </button>
+          <br />
+          <button class="btn-select" onclick="open_setting()">
+            <div class="o">
+              <span class="icons-pause"><i class="bi bi-gear-fill"></i></span> <span class="info-menu">Setting</span>
+            </div>
+          </button>
+          <br />
+          <button class="btn-select" onclick="quit()">
+            <div class="o">
+              <span class="icons-pause"><i class="bi bi-x"></i></span> <span class="info-menu">Quit Game</span>
+            </div>
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Games Area -->
 
-    <div id="games-area" class="">
+    <div id="games-area" class="hidden">
       <div class="quest-w">
         <h1 id="question" class="quest"></h1>
       </div>
 
-      <center>
-        <div class="radio-answers">
-          <input type="radio" name="choices" data-id="0" id="choice0" />
-          <label for="choice0" id="choiceText0" class="inplab"></label>
-          <br /><br />
-
-          <input type="radio" name="choices" data-id="1" id="choice1" />
-          <label for="choice1" id="choiceText1" class="inplab"></label>
-          <br /><br />
-
-          <input type="radio" name="choices" data-id="2" id="choice2" />
-          <label for="choice2" id="choiceText2" class="inplab"></label>
-          <br /><br />
-
-          <input type="radio" name="choices" data-id="3" id="choice3" />
-          <label for="choice3" id="choiceText3" class="inplab"></label>
-          <br /><br />
+      <div class="radio-answers">
+        <div class="box-1">
+          <div class="in">
+            <div class="inr">
+              <input type="radio" name="choices" data-id="0" id="choice0" />
+            </div>
+            <div class="inl">
+              <label for="choice0" id="choiceText0" class="inplab"></label>
+            </div>
+          </div>
         </div>
-      </center>
+        <br /><br />
+
+        <div class="box-2">
+          <div class="in">
+            <div class="inr">
+              <input type="radio" name="choices" data-id="1" id="choice1" />
+            </div>
+            <div class="inl">
+              <label for="choice1" id="choiceText1" class="inplab"></label>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="box-3">
+          <div class="in">
+            <div class="inr">
+              <input type="radio" name="choices" data-id="2" id="choice2" />
+            </div>
+            <div class="inl">
+              <label for="choice2" id="choiceText2" class="inplab"></label>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="box-4">
+          <div class="in">
+            <div class="inr">
+              <input type="radio" name="choices" data-id="3" id="choice3" />
+            </div>
+            <div class="inl">
+              <label for="choice3" id="choiceText3" class="inplab"></label>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
 
       <button onclick="nextQuestion()" class="btn-next-quest">Selanjutnya</button>
     </div>

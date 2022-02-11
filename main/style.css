@@ -340,6 +340,283 @@ body {
   font-weight: normal;
 }
 
+/* Tebak-tebakan */
+
+#tebak-bg {
+  background: url(bgTebak2anMobileVer.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+/* Setting */
+
+#setting {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100%;
+}
+
+#setting2 {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100%;
+}
+
+.setting {
+  background: whitesmoke;
+  height: 20pc;
+  margin: auto;
+  margin-top: 10pc;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  width: 30pc;
+  text-align: center;
+}
+
+/* Audio */
+
+.title-audio-set::after {
+  content: "Audio Setting";
+  font-size: 29px;
+  font-family: "Inconsolata", sans-serif;
+  margin-top: 10px;
+}
+
+.bar-set {
+  width: 20%;
+  margin-top: 7px;
+}
+
+.button-back-control {
+  margin-top: -40px;
+  text-align: right;
+}
+
+.btn-back-set {
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #626262;
+}
+
+.btn-back-set:hover {
+  color: black;
+}
+
+.button-audio-control {
+  margin-top: 30px;
+}
+
+.btn-music {
+  background: #8b0000;
+  border: none;
+  height: 40px;
+  width: 20pc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #c5c5c5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+
+.btn-music:hover {
+  background: #5b0000;
+  box-shadow: none;
+  color: white;
+}
+
+/* Theme */
+
+.theme {
+  margin-top: 40px;
+}
+
+.title-theme-set::after {
+  content: "Theme Setting";
+  font-size: 29px;
+  font-family: "Inconsolata", sans-serif;
+  margin-top: 10px;
+}
+
+/* Content */
+
+#button-open-the-pause-menu {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-open-pause-menu {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  word-spacing: 2px;
+  height: 40px;
+  width: 10pc;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-open-pause-menu:hover {
+  background: rgba(179, 179, 179, 0.5);
+}
+
+/* Games Area */
+
+#games-area {
+  text-align: center;
+  margin-top: 3.5pc;
+}
+
+.quest-w {
+  margin: auto;
+  width: 40pc;
+}
+
+.quest {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.radio-answers {
+  margin-top: 4pc;
+  text-align: left;
+}
+
+.inplab {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 3pc;
+}
+
+.in {
+  line-height: 50px;
+}
+
+.inr {
+  text-align: center;
+  width: 50px;
+}
+
+.inl {
+  margin-top: -50px;
+}
+
+.btn-next-quest {
+  background: green;
+  border: none;
+  color: #e5e5e5;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 40pc;
+  font-size: 20px;
+}
+
+.btn-next-quest:hover {
+  background: darkgreen;
+}
+
+/* Box */
+
+.box-1 {
+  background: rgba(165, 165, 165, 0.4);
+  margin: auto;
+  height: 50px;
+  width: 40pc;
+}
+
+.box-2 {
+  background: rgba(165, 165, 165, 0.4);
+  margin: auto;
+  height: 50px;
+  width: 40pc;
+}
+
+.box-3 {
+  background: rgba(165, 165, 165, 0.4);
+  margin: auto;
+  height: 50px;
+  width: 40pc;
+}
+
+.box-4 {
+  background: rgba(165, 165, 165, 0.4);
+  margin: auto;
+  height: 50px;
+  width: 40pc;
+}
+
+/* Pause Menu */
+
+#pause-menu {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100%;
+}
+
+.pause-menu {
+  margin: auto;
+  background: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+  height: 16.5pc;
+  width: 25pc;
+  margin-top: 11pc;
+  text-align: center;
+}
+
+.title-pause::after {
+  content: "Pause Menu";
+  font-family: "Quicksand", sans-serif;
+  font-size: 35px;
+}
+
+.bar-pause {
+  width: 30%;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.o {
+  width: 10pc;
+  margin: auto;
+}
+
+.icons-pause {
+  font-size: 20px;
+}
+
+.info-menu {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* Menu */
+
+.menu {
+  margin-top: 1.5pc;
+}
+
+.btn-select {
+  background: transparent;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 20pc;
+}
+
+.btn-select:hover {
+  background: lightgray;
+}
+
 /* footer */
 
 footer {
@@ -1066,11 +1343,7 @@ footer {
     font-size: 23px;
   }
 
-  /* style.css */
-
-  .hidden {
-    display: none;
-  }
+  /* Tebak-tebakan */
 
   #tebak-bg {
     background: url(bgTebak2anPCiVer.jpg);
@@ -1078,24 +1351,32 @@ footer {
     width: 100%;
   }
 
-  /* Audio Setting */
+  /* Setting */
 
-  #audio-setting {
+  #setting {
     background: rgba(0, 0, 0, 0.3);
     height: 100vh;
     width: 100%;
   }
 
-  .audio-setting {
+  #setting2 {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+  }
+
+  .setting {
     background: whitesmoke;
-    height: 8pc;
+    height: 20pc;
     margin: auto;
-    margin-top: 15.5pc;
+    margin-top: 10pc;
     border-radius: 10px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
     width: 30pc;
     text-align: center;
   }
+
+  /* Audio */
 
   .title-audio-set::after {
     content: "Audio Setting";
@@ -1104,18 +1385,18 @@ footer {
     margin-top: 10px;
   }
 
-  .bar-audi {
+  .bar-set {
     width: 20%;
     margin-top: 7px;
   }
 
   .button-back-control {
-    margin-top: -36px;
+    margin-top: -40px;
     text-align: right;
   }
 
   .btn-back-set {
-    margin-right: 10px;
+    margin-right: 20px;
     background: transparent;
     border: none;
     font-size: 25px;
@@ -1149,17 +1430,31 @@ footer {
     color: white;
   }
 
+  /* Theme */
+
+  .theme {
+    margin-top: 40px;
+  }
+
+  .title-theme-set::after {
+    content: "Theme Setting";
+    font-size: 29px;
+    font-family: "Inconsolata", sans-serif;
+    margin-top: 10px;
+  }
+
   /* Content */
 
-  #button-open-the-setting {
+  #button-open-the-pause-menu {
     text-align: center;
     margin-top: 10px;
   }
 
-  .btn-open-setting {
+  .btn-open-pause-menu {
     background: transparent;
     border: none;
     font-size: 20px;
+    font-weight: bold;
     word-spacing: 2px;
     height: 40px;
     width: 10pc;
@@ -1168,7 +1463,7 @@ footer {
     border-radius: 5px;
   }
 
-  .btn-open-setting:hover {
+  .btn-open-pause-menu:hover {
     background: rgba(179, 179, 179, 0.5);
   }
 
@@ -1176,7 +1471,7 @@ footer {
 
   #games-area {
     text-align: center;
-    margin-top: 5pc;
+    margin-top: 3.5pc;
   }
 
   .quest-w {
@@ -1189,9 +1484,8 @@ footer {
   }
 
   .radio-answers {
-    margin-top: 3pc;
+    margin-top: 4pc;
     text-align: left;
-    background: tomato;
   }
 
   .inplab {
@@ -1200,6 +1494,130 @@ footer {
     font-size: 20px;
     cursor: pointer;
     margin-left: 3pc;
+  }
+
+  .in {
+    line-height: 50px;
+  }
+
+  .inr {
+    text-align: center;
+    width: 50px;
+  }
+
+  .inl {
+    margin-top: -50px;
+  }
+
+  .btn-next-quest {
+    background: green;
+    border: none;
+    color: #e5e5e5;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 40pc;
+    font-size: 20px;
+  }
+
+  .btn-next-quest:hover {
+    background: darkgreen;
+  }
+
+  /* Box */
+
+  .box-1 {
+    background: rgba(165, 165, 165, 0.4);
+    margin: auto;
+    height: 50px;
+    width: 40pc;
+  }
+
+  .box-2 {
+    background: rgba(165, 165, 165, 0.4);
+    margin: auto;
+    height: 50px;
+    width: 40pc;
+  }
+
+  .box-3 {
+    background: rgba(165, 165, 165, 0.4);
+    margin: auto;
+    height: 50px;
+    width: 40pc;
+  }
+
+  .box-4 {
+    background: rgba(165, 165, 165, 0.4);
+    margin: auto;
+    height: 50px;
+    width: 40pc;
+  }
+
+  /* Pause Menu */
+
+  #pause-menu {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+  }
+
+  .pause-menu {
+    margin: auto;
+    background: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+    height: 16.5pc;
+    width: 25pc;
+    margin-top: 11pc;
+    text-align: center;
+  }
+
+  .title-pause::after {
+    content: "Pause Menu";
+    font-family: "Quicksand", sans-serif;
+    font-size: 35px;
+  }
+
+  .bar-pause {
+    width: 30%;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+  }
+
+  .o {
+    width: 10pc;
+    margin: auto;
+  }
+
+  .icons-pause {
+    font-size: 20px;
+  }
+
+  .info-menu {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  /* Menu */
+
+  .menu {
+    margin-top: 1.5pc;
+  }
+
+  .btn-select {
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 20pc;
+  }
+
+  .btn-select:hover {
+    background: lightgray;
   }
 
   /* footer */

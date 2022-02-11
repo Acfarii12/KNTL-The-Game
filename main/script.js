@@ -143,7 +143,28 @@ function back() {
 // ====== Games ======
 // ===================
 
+// Pause
+
+function pause() {
+  document.getElementById("pause-menu").style.display = "block";
+  document.getElementById("games-area").style.display = "none";
+  document.getElementById("button-open-the-pause-menu").style.display = "none";
+}
+
 // Tebak - Tebakan
+
+function resume_tebak() {
+  document.getElementById("pause-menu").style.display = "none";
+  document.getElementById("games-area").style.display = "block";
+  document.getElementById("button-open-the-pause-menu").style.display = "block";
+}
+
+function quit() {
+  const yakin = confirm("Yakin kamu mau keluar?");
+  if (yakin) {
+    document.location.href = "lobby.html";
+  }
+}
 
 // =====================
 // ======= Games =======
@@ -160,14 +181,22 @@ function music() {
 }
 
 function back_audi() {
-  document.getElementById("audio-setting").style.display = "none";
-  document.getElementById("button-open-the-setting").style.display = "block";
+  document.getElementById("setting").style.display = "none";
+  document.getElementById("button-open-the-pause-menu").style.display = "block";
   document.getElementById("games-area").style.display = "block";
 }
 
+function back_setting() {
+  document.getElementById("setting2").style.display = "none";
+  document.getElementById("button-open-the-pause-menu").style.display = "none";
+  document.getElementById("pause-menu").style.display = "block";
+  document.getElementById("games-area").style.display = "none";
+}
+
 function open_setting() {
-  document.getElementById("audio-setting").style.display = "block";
-  document.getElementById("button-open-the-setting").style.display = "none";
+  document.getElementById("setting2").style.display = "block";
+  document.getElementById("button-open-the-pause-menu").style.display = "none";
+  document.getElementById("pause-menu").style.display = "none";
   document.getElementById("games-area").style.display = "none";
 }
 
@@ -190,7 +219,7 @@ const QUIZ = [
   },
   {
     question: "0 + 1 x 0 = ?",
-    answer: ["2", "I", "1", "0"],
+    answer: ["2", "i", "1", "0"],
   },
   {
     question: "Bebek apa yang kakinya dua?",
@@ -210,7 +239,7 @@ const QUIZ = [
   },
   {
     question: "Mengapa pemanasan global dapat menyebabkan kepunahan spesies? Jelaskan!",
-    answer: ["Peningkatan suhu menyebabkan kepunahan lebih dari satu juta spesies", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
+    answer: ["Peningkatan suhu menyebabkan kepunahan spesies", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
   },
   {
     question: "Minuman paling disukai oleh orang-orang diseluruh dunia?",
