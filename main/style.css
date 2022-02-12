@@ -473,7 +473,7 @@ body {
 
 .quest-w {
   margin: auto;
-  width: 30pc;
+  width: 20pc;
 }
 
 .quest {
@@ -513,7 +513,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   height: 50px;
-  width: 30pc;
+  width: 20pc;
   font-size: 20px;
 }
 
@@ -527,28 +527,28 @@ body {
   background: rgba(165, 165, 165, 0.4);
   margin: auto;
   height: 50px;
-  width: 30pc;
+  width: 20pc;
 }
 
 .box-2 {
   background: rgba(165, 165, 165, 0.4);
   margin: auto;
   height: 50px;
-  width: 30pc;
+  width: 20pc;
 }
 
 .box-3 {
   background: rgba(165, 165, 165, 0.4);
   margin: auto;
   height: 50px;
-  width: 30pc;
+  width: 20pc;
 }
 
 .box-4 {
   background: rgba(165, 165, 165, 0.4);
   margin: auto;
   height: 50px;
-  width: 30pc;
+  width: 20pc;
 }
 
 /* Pause Menu */
