@@ -1,0 +1,659 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(bg/lightmode/bgMobile.JPG);
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+/* navbar */
+
+.navbar {
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  height: 60px;
+  width: 100%;
+}
+
+.navbar .btn-pause {
+  background: #d9d9d9c4;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 5px;
+  line-height: 30px;
+  height: 30px;
+  width: 130px;
+}
+
+.navbar .btn-pause:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 5px -8px rgba(0, 0, 0, 0.5);
+}
+
+/* pause menu */
+
+.pause {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+  padding-top: 195px;
+}
+
+.pause .tablePause {
+  background: #e0e0e0;
+  box-shadow: 0 7px 9px -5px rgba(0, 0, 0, 0.7);
+  width: 23pc;
+  padding: 30px;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.tablePause .title {
+  font-family: "Lato", sans-serif;
+}
+
+.tablePause .menu {
+  margin-top: 20px;
+}
+
+.menu ul li {
+  display: block;
+}
+
+.menu .link .btn-menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  width: 19pc;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+.menu .link .btn-menu:hover {
+  background: #f5f5f5;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* music */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 185px;
+}
+
+.setting-box {
+  background: whitesmoke;
+  position: relative;
+  z-index: 9999;
+  width: 23pc;
+  border-radius: 50px;
+  margin: auto;
+  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.setting-box .title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.setting-box .close {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.setting-box .btn-close {
+  position: relative;
+  top: -37px;
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.setting-box .btn-close:hover {
+  background: #e5e5e5;
+  border-radius: 5px;
+}
+
+.button-music {
+  text-align: center;
+  position: relative;
+  top: 3px;
+}
+
+.button-music .btn-music {
+  background: transparent;
+  border: none;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  color: #4b4b4b;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button-music .btn-music:hover {
+  background: #c5c5c5;
+  color: #1b1b1b;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 4px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* theme */
+
+.button-theme {
+  position: relative;
+  top: -25px;
+  text-align: center;
+}
+
+.button-theme .btn-theme {
+  background: transparent;
+  border: none;
+  width: 13pc;
+  height: 50px;
+  font-size: 20px;
+  color: #4b4b4b;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button-theme .btn-theme:hover {
+  background: #c5c5c5;
+  color: #1b1b1b;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 4px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* game */
+
+.game {
+  padding: 90px 0 0 0;
+  margin: auto;
+  margin-top: 15px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.game .question {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+.game label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  background: rgba(247, 255, 255, 0.7);
+  border-radius: 5px;
+  border: 0.1px solid gray;
+  height: 70px;
+  width: 25pc !important;
+  font-size: 20px;
+  line-height: 50px;
+  text-indent: 20px;
+  text-align: left;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  margin-bottom: 7px;
+  transition: 0.3s;
+}
+
+.game input[type="radio"] {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.game input[type="radio"] + label:hover {
+  background: rgba(235, 235, 235, 0.7);
+}
+
+.game input[type="radio"]:checked + label {
+  background: rgba(239, 239, 239);
+}
+
+.game .answer {
+  position: relative;
+  top: 20px;
+}
+
+.game .btn-next {
+  position: relative;
+  top: 30px;
+  left: 8px;
+  background: darkred;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #c5c5c5;
+  border: none;
+  width: 25pc !important;
+  height: 50px;
+  transition: 0.7s;
+}
+
+.game .btn-next:hover {
+  background: rgb(190, 0, 0);
+  color: whitesmoke;
+  transform: translateY(-1px);
+}
+
+/* endgame / score */
+
+.tableScore {
+  display: none;
+  z-index: 9999;
+  top: 250px;
+  position: absolute;
+  width: 100%;
+}
+
+.tableScore .the-table {
+  width: 30pc;
+  height: 150px;
+  margin: auto;
+  background: #d5d5d5;
+  padding-top: 17px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 18px 7px -13px rgba(0, 0, 0, 0.7);
+}
+
+.tableScore h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.tableScore h3 {
+  font-family: "Actor", sans-serif;
+}
+
+.tableScore .end-button {
+  background: #c01111;
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  top: 30px;
+  cursor: pointer;
+  color: #c5c5c5;
+  font-size: 17px;
+  height: 35px;
+  width: 15pc;
+  transition: 0.3s;
+}
+
+.tableScore .end-button:hover {
+  background: #dc0404;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  body {
+    background: url(bg/lightmode/bgPC.png);
+    background-size: cover;
+  }
+
+  /* navbar */
+
+  .navbar {
+    text-align: center;
+    position: fixed;
+    line-height: 60px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .navbar .btn-pause {
+    background: transparent;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 5px;
+    line-height: 30px;
+    height: 30px;
+    width: 130px;
+  }
+
+  .navbar .btn-pause:hover {
+    background: #d5d5d5;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 5px -8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* pause menu */
+
+  .pause {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    text-align: center;
+    padding-top: 195px;
+  }
+
+  .pause .tablePause {
+    background: #e0e0e0;
+    box-shadow: 0 7px 9px -5px rgba(0, 0, 0, 0.7);
+    width: 25pc;
+    padding: 30px;
+    border-radius: 30px;
+    margin: auto;
+  }
+
+  .tablePause .title {
+    font-family: "Lato", sans-serif;
+  }
+
+  .tablePause .menu {
+    margin-top: 20px;
+  }
+
+  .menu ul li {
+    display: block;
+  }
+
+  .menu .link .btn-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    width: 19pc;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+  }
+
+  .menu .link .btn-menu:hover {
+    background: #f5f5f5;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  /* music */
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 210px;
+  }
+
+  .setting-box {
+    background: whitesmoke;
+    position: relative;
+    z-index: 9999;
+    width: 35%;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .setting-box .title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .setting-box .close {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .setting-box .btn-close {
+    position: relative;
+    top: -37px;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .setting-box .btn-close:hover {
+    background: #e5e5e5;
+    border-radius: 5px;
+  }
+
+  .button-music {
+    text-align: center;
+    position: relative;
+    top: 3px;
+  }
+
+  .button-music .btn-music {
+    background: transparent;
+    border: none;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    color: #4b4b4b;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .button-music .btn-music:hover {
+    background: #c5c5c5;
+    color: #1b1b1b;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 4px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* theme */
+
+  .button-theme {
+    position: relative;
+    top: -25px;
+    text-align: center;
+  }
+
+  .button-theme .btn-theme {
+    background: transparent;
+    border: none;
+    width: 13pc;
+    height: 50px;
+    font-size: 20px;
+    color: #4b4b4b;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .button-theme .btn-theme:hover {
+    background: #c5c5c5;
+    color: #1b1b1b;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 4px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* game */
+
+  .game {
+    padding: 90px 0 0 0;
+    margin: auto;
+    margin-top: 70px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  }
+
+  .game .question {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+  }
+
+  .game label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    background: rgba(247, 255, 255, 0.7);
+    border-radius: 5px;
+    border: 0.1px solid gray;
+    height: 50px;
+    width: 40pc !important;
+    font-size: 20px;
+    line-height: 50px;
+    text-indent: 20px;
+    text-align: left;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    margin-bottom: 7px;
+    transition: 0.3s;
+  }
+
+  .game input[type="radio"] {
+    display: inline-block;
+    visibility: hidden;
+  }
+
+  .game input[type="radio"] + label:hover {
+    background: rgba(235, 235, 235, 0.7);
+  }
+
+  .game input[type="radio"]:checked + label {
+    background: rgba(239, 239, 239);
+  }
+
+  .game .answer {
+    position: relative;
+    top: 20px;
+  }
+
+  .game .btn-next {
+    position: relative;
+    top: 30px;
+    left: 8px;
+    background: darkred;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #c5c5c5;
+    border: none;
+    width: 40pc !important;
+    height: 50px;
+    transition: 0.7s;
+  }
+
+  .game .btn-next:hover {
+    background: rgb(190, 0, 0);
+    color: whitesmoke;
+    transform: translateY(-1px);
+  }
+
+  /* endgame / score */
+
+  .tableScore {
+    display: none;
+    z-index: 9999;
+    top: 250px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .tableScore .the-table {
+    width: 30pc;
+    height: 150px;
+    margin: auto;
+    background: #d5d5d5;
+    padding-top: 17px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 18px 7px -13px rgba(0, 0, 0, 0.7);
+  }
+
+  .tableScore h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+  }
+
+  .tableScore h3 {
+    font-family: "Actor", sans-serif;
+  }
+
+  .tableScore .end-button {
+    background: #c01111;
+    border: none;
+    border-radius: 7px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    color: #c5c5c5;
+    font-size: 17px;
+    height: 35px;
+    width: 15pc;
+    transition: 0.3s;
+  }
+
+  .tableScore .end-button:hover {
+    background: #dc0404;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* lightmode */
+
+#lightmode {
+  background: white;
+  color: black;
+}

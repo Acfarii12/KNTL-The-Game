@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="category" content="Maybe Game, or Not a Game" />
+    <meta name="title" content="KNTL - The Game" />
+    <meta name="creator" content="Acfarii12" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>KNTL | Tebak - Tebakan</title>
+    <link rel="icon" type="image/x-icon" href="../icon/kenamental.png" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <button type="submit" class="btn-pause" onclick="pause()"><i class="bi bi-pause-fill"></i> PAUSE</button>
+    </div>
+
+    <!-- sound 1st -->
+    <div class="overlay" id="Setting">
+      <div class="setting-box">
+        <div class="theme">
+          <h1 class="title">Theme</h1>
+          <div class="close">
+            <button class="btn-close" onclick="x()">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="button-theme">
+            <button class="btn-theme" onclick="setLightMode(false)"><i class="bi bi-moon-stars-fill"></i> Tema Gelap</button>
+            <button class="btn-theme" onclick="setLightMode(true)"><i class="bi bi-sun-fill"></i> Tema Terang</button>
+          </div>
+        </div>
+        <div class="zvx">
+          <h1 class="title">Music</h1>
+          <div class="button-music">
+            <button class="btn-music" id="btn_music" onclick="music()">Play / Pause</button>
+            <audio id="bgMusic" src="..//music/Mii Plaza.mp3" loop></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pause -->
+    <div class="pause hidden" id="pause">
+      <div class="tablePause">
+        <h1 class="title">PAUSED</h1>
+        <div class="menu">
+          <ul>
+            <li class="link">
+              <button class="btn-menu" onclick="resume()"><i class="bi bi-play-fill"></i> Lanjutkan</button>
+            </li>
+            <li class="link">
+              <button class="btn-menu" onclick="setting()"><i class="bi bi-gear-fill"></i> Pengaturan</button>
+            </li>
+            <li class="link">
+              <button class="btn-menu" onclick="quit()"><i class="bi bi-x-lg"></i> Keluar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- sound -->
+    <div class="overlay hidden" id="Setting">
+      <div class="setting-box">
+        <div class="theme">
+          <h1 class="title">Theme</h1>
+          <div class="close">
+            <button class="btn-close" onclick="x()">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="button-theme">
+            <button class="btn btnDark" onclick="setLightMode(false)"><i class="bi bi-moon-stars-fill"></i> Tema Gelap</button>
+            <button class="btn btnLight" onclick="setLightMode(true)"><i class="bi bi-sun-fill"></i> Tema Terang</button>
+          </div>
+        </div>
+        <div class="zvx">
+          <h1 class="title">Music</h1>
+          <div class="button-music">
+            <button class="btn-music" id="btn_music" onclick="music()">Play / Pause</button>
+            <audio id="bgMusic" src="..//music/Mii Plaza.mp3" loop></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- game -->
+    <div id="questions-play" class="game">
+      <h1 class="question" id="question"></h1>
+
+      <center>
+        <input type="radio" name="choices" data-id="0" id="choice0" />
+        <label for="choice0" id="choiceText0"></label>
+        <br />
+        <input type="radio" name="choices" data-id="1" id="choice1" />
+        <label for="choice1" id="choiceText1"></label>
+        <br />
+        <input type="radio" name="choices" data-id="2" id="choice2" />
+        <label for="choice2" id="choiceText2"></label>
+        <br />
+        <input type="radio" name="choices" data-id="3" id="choice3" />
+        <label for="choice3" id="choiceText3"></label>
+        <br />
+        <button class="btn-next" onclick="nextQuestions()">Next Question</button>
+      </center>
+    </div>
+
+    <!-- endgame / score -->
+    <div id="end-game" class="tableScore">
+      <div class="the-table">
+        <h2>Permainan Selesai</h2>
+        <h3 id="scoreText" style="margin-top: 10px">Score</h3>
+        <button class="end-button" onclick="thanks()">OK</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.cssscript.com/demo/confetti-falling-animation/confetti.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

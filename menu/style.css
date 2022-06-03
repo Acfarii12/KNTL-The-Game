@@ -1,0 +1,398 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(rain.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42.9pc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MOBILE VERSION */
+
+/* content */
+
+#content {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* height: 42.9pc;
+  width: 100%; */
+}
+
+/* navbar */
+
+#content .navbar {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#content .navbar button {
+  background: transparent;
+  border: none;
+  color: #a5a5a5;
+  transition: 1s;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+
+#content .navbar button:hover {
+  color: white;
+}
+
+#content .navbar a {
+  color: #a5a5a5;
+  text-decoration: none;
+  transition: 1s;
+  position: relative;
+  left: 5px;
+}
+
+#content .navbar a::after {
+  content: "Info";
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#content .navbar a:hover {
+  color: whitesmoke;
+}
+
+/* menu select */
+
+@keyframes titleMasuk {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transition: 1s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transition: 1s;
+  }
+}
+
+#content .title {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  animation: titleMasuk 1s ease 1 forwards running;
+}
+
+.games {
+  display: none;
+}
+
+.games-ml {
+  height: 400px;
+  width: 13pc;
+  margin: auto;
+  top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes gambarMasuk {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transition: 1s;
+    transform: rotateY(360deg);
+  }
+}
+
+.games-ml img {
+  position: relative;
+  height: 300px;
+  width: 13pc;
+  animation: gambarMasuk 1s ease 1 forwards running;
+}
+
+.games-ml .title-game {
+  position: relative;
+  top: 10px;
+  font-family: "Lato", sans-serif;
+  color: #c5c5c5;
+  animation: titleMasuk 1s ease 1 forwards running;
+}
+
+.games-ml .next-prev {
+  position: relative;
+  top: -190px;
+}
+
+.games-ml a span {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 13pc;
+  text-align: center;
+  line-height: 300px;
+  color: #c5c5c5;
+  top: 0;
+  left: 0;
+  font-size: 60px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.games-ml a:hover span {
+  opacity: 1;
+}
+
+/* button */
+
+@keyframes btnPrev {
+  from {
+    opacity: 0;
+    right: -60px;
+  }
+  to {
+    opacity: 1;
+    right: 60px;
+  }
+}
+
+.games-ml .next-prev .btn-prev {
+  float: left;
+  position: relative;
+  right: 60px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  color: #c5c5c5;
+  cursor: pointer;
+  transition: 1s;
+  animation: btnPrev 1s ease 1 forwards running;
+}
+
+.games-ml .next-prev .btn-prev:hover {
+  transform: translateX(-10px);
+  color: white;
+}
+
+@keyframes btnNext {
+  from {
+    opacity: 0;
+    left: -60px;
+  }
+  to {
+    opacity: 1;
+    left: 60px;
+  }
+}
+
+.games-ml .next-prev .btn-next {
+  float: right;
+  position: relative;
+  left: 60px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  color: #c5c5c5;
+  cursor: pointer;
+  transition: 1s;
+  animation: btnNext 1s ease 1 forwards running;
+}
+
+.games-ml .next-prev .btn-next:hover {
+  transform: translateX(10px);
+  color: white;
+}
+
+/* credits */
+
+.credits {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  /* content */
+
+  #content {
+    background: rgba(0, 0, 0, 0.7);
+    height: 43.4pc;
+    width: 100%;
+  }
+
+  /* navbar */
+
+  #content .navbar {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  #content .navbar a {
+    color: #a5a5a5;
+    text-decoration: none;
+    transition: 1s;
+    text-align: right;
+    position: relative;
+    left: 35pc;
+  }
+
+  #content .navbar a::after {
+    content: "";
+  }
+
+  #content .navbar button {
+    background: transparent;
+    border: none;
+    color: #a5a5a5;
+    transition: 1s;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    position: relative;
+    right: 35pc;
+    cursor: pointer;
+  }
+
+  #content .navbar button:hover {
+    transform: translateX(-10px);
+    color: white;
+  }
+
+  #content .navbar a:hover {
+    color: whitesmoke;
+  }
+
+  /* menu select */
+
+  @keyframes titleMasuk {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+      transition: 1s;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transition: 1s;
+    }
+  }
+
+  #content .title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    animation: titleMasuk 1s ease 1 forwards running;
+  }
+
+  .games {
+    margin: auto;
+    width: 62.9%;
+    text-align: center;
+    display: block;
+  }
+
+  .games-ml {
+    display: none;
+  }
+
+  .games li {
+    display: inline-block;
+    width: 17.5pc;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  @keyframes gambarMasuk {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transition: 1s;
+      transform: rotateY(360deg);
+    }
+  }
+
+  .games li img {
+    height: 22pc;
+    width: 15.5pc;
+    position: relative;
+    animation: gambarMasuk 1s ease 1 forwards running;
+  }
+
+  .games li .more-info {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #c5c5c5;
+    margin-top: 20px;
+    width: 17.5pc;
+    animation: titleMasuk 1s ease 1 forwards running;
+  }
+
+  .games li .parent {
+    position: relative;
+    width: 15.5pc;
+    height: 22pc;
+    margin: auto;
+  }
+
+  .games li span {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 22pc;
+    width: 15.5pc;
+    text-align: center;
+    line-height: 22pc;
+    color: #c5c5c5;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    transition: 1s;
+    opacity: 0;
+  }
+
+  .games li:hover span {
+    opacity: 1;
+  }
+
+  /* credits */
+
+  .credits {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    top: 30px;
+  }
+}
