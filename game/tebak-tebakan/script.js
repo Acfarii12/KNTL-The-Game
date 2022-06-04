@@ -94,7 +94,7 @@ const quest = [
   },
   {
     question: "Mengapa pemanasan global dapat menyebabkan kepunahan spesies?",
-    answer: ["Naiknya Suhu menyebabkan kepunahan spesies", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
+    answer: ["Naiknya Suhu menyebabkan kepunahan", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
   },
   {
     question: "Minuman yang disukai orang-orang di seluruh dunia?",
@@ -129,10 +129,6 @@ const quest = [
     answer: ["celana", "Celana", "celanA", "CELANA"],
   },
   {
-    question: "Jika ꧁𒋨𒈞𒍦🕷𒍧𒈞𒋨꧂, kenapa Spider-Man makan rambutan? ",
-    answer: ["Karena 🌇🌉🌌👍", "Karena Spider-Man adalah ꧁ҜβŞ༆Ꮪ Ꭺ ᴎ Ꭲ υ Ꮍ࿐꧂", "Mau makan pisang", "Mau makan Nasi Padang"],
-  },
-  {
     question: "Aku punya kucing kecil, ku beri nama?",
     answer: ["Anjing", "Anjing", "Anak Anjing", "Lupin"],
   },
@@ -152,13 +148,9 @@ const quest = [
     question: "Ibu ingin membuat kue, tapi tidak ingin telurnya habis. Bagaimana caranya supaya telurnya tidak habis?",
     answer: ["Tidak usah membikin kue", "Membeli telur lagi", "Membuat telur sendiri", "Membeli kue di toko terdekat"],
   },
-  {
-    question: "Tata cara memasak mie rasa mie!",
-    answer: ["1. Masukkan mie, 2. Aduk, 3. Tiriskan", "1. Buang airnya, 2. Masukkan mie, 3. Tiriskan", "1. Tuang air susu, 2. Masukkan mie, 3. Tiriskan", "1. Masukkan mie, 2. Tiriskan, 3. Anjir laper.."],
-  },
 ];
 
-const CORRECT_ANSWER = [1, 2, 0, 3, 3, 2, 0, 1, 1, 0, 0, 0, 2, 0, 2, 0, 0, 1, 3, 2, 3, 0, 0, 3];
+const CORRECT_ANSWER = [1, 2, 0, 3, 3, 2, 0, 1, 1, 0, 0, 0, 2, 0, 2, 0, 0, 3, 2, 3, 0, 0];
 
 // =======================
 // === SETUP QUESTIONS ===

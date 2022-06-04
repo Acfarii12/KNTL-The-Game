@@ -217,6 +217,7 @@ body {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: normal;
+  font-size: 25px;
 }
 
 .game label {
@@ -227,7 +228,7 @@ body {
   border-radius: 5px;
   border: 0.1px solid gray;
   height: 70px;
-  width: 15pc !important;
+  width: 19.5pc !important;
   font-size: 20px;
   line-height: 50px;
   text-indent: 20px;
@@ -268,7 +269,7 @@ body {
   cursor: pointer;
   color: #c5c5c5;
   border: none;
-  width: 15pc !important;
+  width: 19.5pc !important;
   height: 50px;
   transition: 0.7s;
 }
@@ -539,6 +540,7 @@ body {
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: normal;
+    font-size: 35px;
   }
 
   .game label {
