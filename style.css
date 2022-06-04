@@ -9,7 +9,8 @@ body {
   background: url(tokyo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 42.9pc;
+  height: 44pc;
+  overflow: hidden;
 }
 
 /* lobby */
@@ -34,7 +35,7 @@ body {
 
 .jumbotron {
   text-align: center;
-  padding-top: 280px;
+  padding-top: 250px;
 }
 
 .jumbotron .a {
