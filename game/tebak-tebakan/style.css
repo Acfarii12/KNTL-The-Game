@@ -17,6 +17,7 @@ body {
 /* navbar */
 
 .navbar {
+  z-index: 9999;
   text-align: center;
   position: fixed;
   line-height: 60px;
@@ -61,7 +62,7 @@ body {
 .pause .tablePause {
   background: #e0e0e0;
   box-shadow: 0 7px 9px -5px rgba(0, 0, 0, 0.7);
-  width: 23pc;
+  width: 15pc;
   padding: 30px;
   border-radius: 30px;
   margin: auto;
@@ -85,7 +86,7 @@ body {
   cursor: pointer;
   font-size: 20px;
   height: 50px;
-  width: 19pc;
+  width: 9pc;
   border-radius: 7px;
   margin-bottom: 5px;
   transition: 0.5s;
@@ -114,7 +115,7 @@ body {
   background: whitesmoke;
   position: relative;
   z-index: 9999;
-  width: 23pc;
+  width: 19pc;
   border-radius: 50px;
   margin: auto;
   box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
@@ -204,7 +205,7 @@ body {
 /* game */
 
 .game {
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
   margin: auto;
   margin-top: 15px;
   position: fixed;
@@ -226,7 +227,7 @@ body {
   border-radius: 5px;
   border: 0.1px solid gray;
   height: 70px;
-  width: 25pc !important;
+  width: 15pc !important;
   font-size: 20px;
   line-height: 50px;
   text-indent: 20px;
@@ -235,7 +236,7 @@ body {
   cursor: pointer;
   position: relative;
   top: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 1px;
   transition: 0.3s;
 }
 
@@ -245,11 +246,11 @@ body {
 }
 
 .game input[type="radio"] + label:hover {
-  background: rgba(235, 235, 235, 0.7);
+  background: rgba(234, 234, 234, 0.7);
 }
 
 .game input[type="radio"]:checked + label {
-  background: rgba(239, 239, 239);
+  background: rgb(187, 187, 187) !important;
 }
 
 .game .answer {
@@ -267,7 +268,7 @@ body {
   cursor: pointer;
   color: #c5c5c5;
   border: none;
-  width: 25pc !important;
+  width: 15pc !important;
   height: 50px;
   transition: 0.7s;
 }
@@ -567,11 +568,11 @@ body {
   }
 
   .game input[type="radio"] + label:hover {
-    background: rgba(235, 235, 235, 0.7);
+    background: rgba(234, 234, 234, 0.7);
   }
 
   .game input[type="radio"]:checked + label {
-    background: rgba(239, 239, 239);
+    background: rgb(187, 187, 187) !important;
   }
 
   .game .answer {

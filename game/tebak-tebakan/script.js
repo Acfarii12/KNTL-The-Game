@@ -94,7 +94,7 @@ const quest = [
   },
   {
     question: "Mengapa pemanasan global dapat menyebabkan kepunahan spesies?",
-    answer: ["Peningkatan suhu menyebabkan kepunahan spesies", "Sama", "Tidak tahu", "Karena adanya efek  rumah kaca"],
+    answer: ["Naiknya Suhu menyebabkan kepunahan spesies", "Sama", "Tidak tahu", "Karena adanya efek rumah kaca"],
   },
   {
     question: "Minuman yang disukai orang-orang di seluruh dunia?",
